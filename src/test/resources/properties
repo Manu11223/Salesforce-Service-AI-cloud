@@ -1,0 +1,8 @@
+URL=https://login.salesforce.com/?locale=in
+username=manohar@cognizant.com
+password=Manu@1234
+Clone=Clone Case
+body=the case has been closed successfully this is acknowledgement mail
+escalate=escalate case
+parent=00001062
+to=kiran ram

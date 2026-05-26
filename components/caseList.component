@@ -1,0 +1,12 @@
+<aura:component controller="CaseController" implements="flexipage:availableForRecordHome">
+    <aura:attribute name="cases" type="Case[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:card title="Open Cases">
+        <aura:set attribute="body">
+            <aura:iteration items="{!v.cases}" var="case">
+                <c:caseListItem case="{!case}"/>
+            </aura:iteration>
+        </aura:set>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,19 @@
+<apex:page standardController="Case" extensions="CaseController">
+    <apex:sectionHeader title="Service Console" subtitle="Case Management"/>
+    
+    <apex:pageBlock title="Case Details">
+        <apex:pageBlockSection>
+            <apex:outputField value="{!Case.Subject}"/>
+            <apex:outputField value="{!Case.Status}"/>
+            <apex:outputField value="{!Case.Priority}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="Related Cases">
+        <apex:pageBlockTable value="{!openCases}" var="c">
+            <apex:column value="{!c.Subject}"/>
+            <apex:column value="{!c.Status}"/>
+            <apex:column value="{!c.CreatedDate}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Service Cloud metrics dashboard</description>
+    <layoutType>Fixed</layoutType>
+    <name>Service Metrics</name>
+    <runningUser>manu@company.com</runningUser>
+    <textColor>#000000</textColor>
+    <titleColor>#0000FF</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>
